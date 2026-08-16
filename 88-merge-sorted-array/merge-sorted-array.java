@@ -4,9 +4,9 @@ class Solution {
         int j=0;
         for(int i=k;i<nums1.length;i++){
             nums1[k]=nums2[j];
-            j++;
             k++;
+            j++;
         }
-        Arrays.sort(nums1);
+         Arrays.sort(nums1);
     }
 }
