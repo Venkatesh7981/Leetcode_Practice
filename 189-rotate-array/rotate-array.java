@@ -1,14 +1,13 @@
 class Solution {
 
-    public void rev(int arr[],int l,int r){
+    public void rev(int []arr,int l,int r){
         while(l<r){
-     int temp=arr[l];
-        arr[l]=arr[r];
-        arr[r]=temp;
-        l++;
-        r--;
+         arr[l]=arr[l]^arr[r];
+         arr[r]=arr[l]^arr[r];
+         arr[l]=arr[l]^arr[r];
+         l++;
+         r--;
         }
-        
     }
     public void rotate(int[] nums, int k) {
         int n=nums.length;
