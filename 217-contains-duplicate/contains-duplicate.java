@@ -5,9 +5,7 @@ class Solution {
             map.put(num,map.getOrDefault(num,0)+1);
         }
         for(int num:map.keySet()){
-            if(map.get(num)>1){
-                return true;
-            }
+            if(map.get(num)>1) return true;
         }
         return false;
     }
