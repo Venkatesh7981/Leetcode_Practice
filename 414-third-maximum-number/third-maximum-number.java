@@ -6,12 +6,9 @@ class Solution {
         }
         ArrayList<Integer> a=new ArrayList<>(set);
         Collections.sort(a);
-       
-              if(a.size()<3){
+            if(a.size()<3){
                 return a.get(a.size()-1);
-              }
-              else {
-                return a.get(a.size()-3);
-              }
+            }
+            else return a.get(a.size()-3);
     }
 }
