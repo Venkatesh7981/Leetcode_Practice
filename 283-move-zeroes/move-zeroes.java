@@ -7,10 +7,10 @@ class Solution {
                 i++;
             }
         }
-        for(int j=i;j<=nums.length-1;j++){
+
+        while(i<nums.length){
             nums[i]=0;
             i++;
         }
-        
     }
 }
