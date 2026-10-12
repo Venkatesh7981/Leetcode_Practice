@@ -5,15 +5,16 @@ class Solution {
         int max=0;
         while(i<j){
             int wid=j-i;
-            int hig=Math.min(nums[i],nums[j]);
-            int area=wid*hig;
-            max=Math.max(max,area);
+            int high=Math.min(nums[i],nums[j]);
+            int area=wid*high;
+            max=Math.max(area,max);
             if(nums[i]<nums[j]){
                 i++;
             }
             else {
                 j--;
             }
+
         }
         return max;
     }
