@@ -17,7 +17,7 @@ class Solution {
             j--;
         }
         if(i!=j){
-            res=1.0*((ans[i]+ans[j]))/2;
+            res=1.0*(ans[i]+ans[j])/2;
         }
         else {
             return ans[j];
