@@ -4,11 +4,17 @@ class Solution {
         for(int num:nums){
             set.add(num);
         }
+
         ArrayList<Integer> a=new ArrayList<>(set);
         Collections.sort(a);
+        for(int num:a){
             if(a.size()<3){
                 return a.get(a.size()-1);
             }
-            else return a.get(a.size()-3);
+            else {
+                return a.get(a.size()-3);
+            }
+        }
+        return -1;
     }
 }
