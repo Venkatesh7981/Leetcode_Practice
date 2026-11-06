@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> spiralOrder(int[][] nums) {
         int  n=nums.length;
-        int m=nums[0].length;
+        int  m=nums[0].length;
         int left=0;
         int right=m-1;
         int top=0;
@@ -27,8 +27,7 @@ class Solution {
                     a.add(nums[i][left]);
                 }
                 left++;
-            }
-           
+            }    
         }
         return a;
     }
