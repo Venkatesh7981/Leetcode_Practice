@@ -8,9 +8,9 @@ class Solution {
             pre*=nums[i];
         }
         int suf=1;
-        for(int i=n-1;i>=0;i--){
-            res[i]*=suf;
-            suf*=nums[i];
+        for(int j=n-1;j>=0;j--){
+            res[j]*=suf;
+            suf*=nums[j];
         }
         return res;
     }
